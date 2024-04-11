@@ -1,0 +1,290 @@
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        :root {
+            --color-primary: #f6aca2;
+            --color-secondary: #f49b90;
+            --color-tertiary: #f28b7d;
+            --color-quaternary: #f07a6a;
+            --color-quinary: #ee6352;
+
+            --color-primary2: #a2f6ac;
+            --color-secondary2: #8bf497;
+            --color-tertiary2: #74f282;
+            --color-quaternary2: #5df06d;
+            --color-quinary2: #46ee58;
+
+            --color-primary3: #e5e5e5;
+            --color-secondary3: #cccccc;
+            --color-tertiary3: #b2b2b2;
+            --color-quaternary3: #999999;
+            --color-quinary3: #7f7f7f;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: canada-type-gibson, sans-serif;
+            font-weight: 300;
+            font-size: 1.25rem;
+            overflow: hidden;
+            background-color: #eff8e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+        }
+
+        .content {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .text_shadows {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+                9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+            font-family: bungee, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: calc(2rem + 5vw);
+            text-align: center;
+            margin: 0;
+            color: var(--color-primary);
+            animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+            letter-spacing: 0.4rem;
+        }
+
+        .text_shadows2 {
+            text-shadow: 3px 3px 0 var(--color-secondary2),
+                6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2),
+                12px 12px 0 var(--color-quinary2);
+            font-family: bungee, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: calc(2rem + 5vw);
+            text-align: center;
+            margin: 0;
+            color: var(--color-primary2);
+            animation: shadows2 1.2s 0.6s ease-in infinite,
+                move 1.2s 0.6s ease-in infinite;
+            letter-spacing: 0.4rem;
+        }
+
+
+
+        .box_shadows {
+            animation: bounce both 1.2s 0.6s ease-in-out infinite alternate;
+        }
+
+        @keyframes shadows {
+            0% {
+                text-shadow: none;
+            }
+
+            10% {
+                text-shadow: 3px 3px 0 var(--color-secondary);
+            }
+
+            20% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary);
+            }
+
+            30% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+            }
+
+            40% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                    12px 12px 0 var(--color-quinary);
+            }
+
+            50% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                    12px 12px 0 var(--color-quinary);
+            }
+
+            60% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                    12px 12px 0 var(--color-quinary);
+            }
+
+            70% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+            }
+
+            80% {
+                text-shadow: 3px 3px 0 var(--color-secondary),
+                    6px 6px 0 var(--color-tertiary);
+            }
+
+            90% {
+                text-shadow: 3px 3px 0 var(--color-secondary);
+            }
+
+            100% {
+                text-shadow: none;
+            }
+        }
+
+        @keyframes shadows2 {
+            0% {
+                text-shadow: none;
+            }
+
+            10% {
+                text-shadow: 3px 3px 0 var(--color-secondary2);
+            }
+
+            20% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2);
+            }
+
+            30% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2);
+            }
+
+            40% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2),
+                    12px 12px 0 var(--color-quinary2);
+            }
+
+            50% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2),
+                    12px 12px 0 var(--color-quinary2);
+            }
+
+            60% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2),
+                    12px 12px 0 var(--color-quinary2);
+            }
+
+            70% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2), 9px 9px var(--color-quaternary2);
+            }
+
+            80% {
+                text-shadow: 3px 3px 0 var(--color-secondary2),
+                    6px 6px 0 var(--color-tertiary2);
+            }
+
+            90% {
+                text-shadow: 3px 3px 0 var(--color-secondary2);
+            }
+
+            100% {
+                text-shadow: none;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            40% {
+                transform: translate(-12px, -12px);
+            }
+
+            50% {
+                transform: translate(-12px, -12px);
+            }
+
+            60% {
+                transform: translate(-12px, -12px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            50% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .shape {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            transform: scale(0.8);
+        }
+        .cir {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 5;
+        }
+
+        .btn {
+            position:absolute;
+            background: transparent;
+            text-align: center;
+            z-index: 10;
+            transition: 0.2s;
+            cursor: pointer;
+            color: #fff;
+            box-shadow:none;
+            border: none;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%)
+        }
+        .btn:active, .btn:hover, .btn:focus {
+            outline: none !important;
+            color: white;
+        } 
+        .btn-contain{
+            position: relative;
+            height:200px;
+        }
+        .btn-particles {
+            top:50%;
+            left:50%;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            border-radius: 50%;
+            color: #eee;
+            font-family: monospace;
+            z-index: 11;
+             filter: url(#gooeyness); 
+             transform:translate(-50%, -50%);
+             pointer-events: none;
+        }
+        .btn:active {
+            transform: scale(0.9) translate(-55%, -55%);
+        }
